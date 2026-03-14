@@ -1,0 +1,13 @@
+name: renovate.json
+description: Renovate bot configuration file for automated dependency updates, supporting
+  multiple package managers and customizable update strategies.
+url: ''
+tags:
+- Dependency Management
+- Automation
+- CI/CD
+- Configuration
+created: '2025'
+modified: '2025'
+apis: []
+common: []
