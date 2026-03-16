@@ -1,13 +1,19 @@
+aid: renovate-json
 name: renovate.json
 description: Renovate bot configuration file for automated dependency updates, supporting
   multiple package managers and customizable update strategies.
-url: ''
+type: Index
+url: https://raw.githubusercontent.com/api-evangelist/renovate-json/refs/heads/main/apis.yml
 tags:
 - Dependency Management
 - Automation
 - CI/CD
 - Configuration
-created: '2025'
-modified: '2025'
+created: '2025-01-01'
+modified: '2026-03-16'
+specificationVersion: '0.19'
 apis: []
 common: []
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
