@@ -1,5 +1,5 @@
 aid: renovate-json
-name: renovate.json
+name: Renovate.json
 description: Renovate bot configuration file for automated dependency updates, supporting
   multiple package managers and customizable update strategies.
 type: Index
