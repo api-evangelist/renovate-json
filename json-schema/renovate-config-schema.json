@@ -1,0 +1,151 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://docs.renovatebot.com/schemas/renovate-config",
+  "title": "Renovate Configuration",
+  "description": "JSON configuration schema for the Renovate dependency automation tool (renovate.json)",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "JSON Schema reference for IDE validation",
+      "example": "https://docs.renovatebot.com/renovate-schema.json"
+    },
+    "extends": {
+      "type": "array",
+      "description": "Preset configurations to extend. Common: config:recommended, config:base",
+      "items": { "type": "string" },
+      "example": ["config:recommended"]
+    },
+    "enabled": {
+      "type": "boolean",
+      "description": "Whether Renovate is enabled for the repository"
+    },
+    "timezone": {
+      "type": "string",
+      "description": "IANA timezone for scheduling",
+      "example": "America/New_York"
+    },
+    "schedule": {
+      "type": "array",
+      "description": "Array of cron expressions or natural language schedules",
+      "items": { "type": "string" },
+      "example": ["before 6am on Monday"]
+    },
+    "prConcurrentLimit": {
+      "type": "integer",
+      "description": "Maximum number of open PRs at any time",
+      "example": 10
+    },
+    "prHourlyLimit": {
+      "type": "integer",
+      "description": "Maximum number of PRs to create per hour",
+      "example": 2
+    },
+    "branchPrefix": {
+      "type": "string",
+      "description": "Prefix for Renovate-created branches",
+      "example": "renovate/"
+    },
+    "commitMessagePrefix": {
+      "type": "string",
+      "description": "Prefix for commit messages",
+      "example": "chore(deps):"
+    },
+    "labels": {
+      "type": "array",
+      "description": "Labels to apply to created PRs",
+      "items": { "type": "string" },
+      "example": ["dependencies", "renovate"]
+    },
+    "assignees": {
+      "type": "array",
+      "description": "GitHub usernames to assign to PRs",
+      "items": { "type": "string" }
+    },
+    "reviewers": {
+      "type": "array",
+      "description": "GitHub usernames to request review from",
+      "items": { "type": "string" }
+    },
+    "automerge": {
+      "type": "boolean",
+      "description": "Whether to automatically merge passing PRs",
+      "example": false
+    },
+    "automergeType": {
+      "type": "string",
+      "description": "Automerge strategy: pr, branch, or pr-comment",
+      "enum": ["pr", "branch", "pr-comment"]
+    },
+    "packageRules": {
+      "type": "array",
+      "description": "Rules to apply to specific packages or package groups",
+      "items": {
+        "type": "object",
+        "properties": {
+          "matchPackageNames": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "matchPackagePatterns": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "matchManagers": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "matchUpdateTypes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["major", "minor", "patch", "pin", "digest", "pinDigest", "rollback", "bump", "replacement"]
+            }
+          },
+          "enabled": { "type": "boolean" },
+          "automerge": { "type": "boolean" },
+          "groupName": { "type": "string" },
+          "schedule": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "ignoreDeps": {
+      "type": "array",
+      "description": "List of dependency names to ignore completely",
+      "items": { "type": "string" }
+    },
+    "ignorePaths": {
+      "type": "array",
+      "description": "File paths to exclude from updates",
+      "items": { "type": "string" }
+    },
+    "enabledManagers": {
+      "type": "array",
+      "description": "Explicitly enabled package managers",
+      "items": { "type": "string" }
+    },
+    "rangeStrategy": {
+      "type": "string",
+      "description": "How to handle version range updates",
+      "enum": ["auto", "pin", "bump", "replace", "widen", "update-lockfile", "in-range-only"]
+    },
+    "semanticCommits": {
+      "type": "string",
+      "description": "Use semantic commit messages",
+      "enum": ["auto", "enabled", "disabled"]
+    },
+    "dependencyDashboard": {
+      "type": "boolean",
+      "description": "Create a Dependency Dashboard issue in the repository",
+      "example": true
+    },
+    "vulnerabilityAlerts": {
+      "type": "object",
+      "description": "Configuration for security vulnerability update PRs"
+    },
+    "lockFileMaintenance": {
+      "type": "object",
+      "description": "Configuration for periodic lock file maintenance PRs"
+    }
+  }
+}

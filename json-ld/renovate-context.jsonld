@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "renovate": "https://docs.renovatebot.com/vocab#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "doap": "http://usefulinc.com/ns/doap#",
+
+    "RenovateConfig": "renovate:RenovateConfig",
+    "PackageRule": "renovate:PackageRule",
+    "Dependency": "renovate:Dependency",
+    "PullRequest": "schema:Action",
+
+    "extends": "renovate:extends",
+    "enabled": {
+      "@id": "renovate:enabled",
+      "@type": "xsd:boolean"
+    },
+    "timezone": "renovate:timezone",
+    "schedule": "renovate:schedule",
+    "prConcurrentLimit": {
+      "@id": "renovate:prConcurrentLimit",
+      "@type": "xsd:integer"
+    },
+    "automerge": {
+      "@id": "renovate:automerge",
+      "@type": "xsd:boolean"
+    },
+    "packageRules": "renovate:packageRules",
+    "matchPackageNames": "renovate:matchPackageNames",
+    "matchPackagePatterns": "renovate:matchPackagePatterns",
+    "matchUpdateTypes": "renovate:matchUpdateTypes",
+    "groupName": "renovate:groupName",
+    "ignoreDeps": "renovate:ignoreDeps",
+    "dependencyDashboard": {
+      "@id": "renovate:dependencyDashboard",
+      "@type": "xsd:boolean"
+    },
+    "lockFileMaintenance": "renovate:lockFileMaintenance",
+    "vulnerabilityAlerts": "renovate:vulnerabilityAlerts",
+
+    "Software": "doap:Project",
+    "GitRepository": "doap:GitRepository",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "license": "doap:license",
+    "language": "doap:programming-language",
+
+    "updateTypes": {
+      "@id": "renovate:updateTypes",
+      "@type": "@vocab",
+      "@context": {
+        "major": "renovate:MajorUpdate",
+        "minor": "renovate:MinorUpdate",
+        "patch": "renovate:PatchUpdate",
+        "pin": "renovate:PinUpdate",
+        "digest": "renovate:DigestUpdate"
+      }
+    }
+  }
+}

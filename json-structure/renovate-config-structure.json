@@ -1,0 +1,76 @@
+{
+  "title": "Renovate Configuration Structure",
+  "description": "Structural documentation for renovate.json configuration file",
+  "type": "object",
+  "structure": {
+    "$schema": {
+      "type": "string",
+      "description": "JSON Schema URL for IDE validation and autocomplete",
+      "example": "https://docs.renovatebot.com/renovate-schema.json"
+    },
+    "extends": {
+      "type": "array",
+      "description": "Shared preset configurations to inherit (e.g., config:recommended)",
+      "example": ["config:recommended"]
+    },
+    "enabled": {
+      "type": "boolean",
+      "description": "Master switch to enable or disable Renovate for this repo",
+      "example": true
+    },
+    "timezone": {
+      "type": "string",
+      "description": "IANA timezone used for schedule evaluation",
+      "example": "America/Chicago"
+    },
+    "schedule": {
+      "type": "array",
+      "description": "When Renovate is allowed to run (cron or natural language)",
+      "example": ["before 6am on weekdays"]
+    },
+    "prConcurrentLimit": {
+      "type": "integer",
+      "description": "Maximum simultaneous open Renovate PRs",
+      "example": 5
+    },
+    "automerge": {
+      "type": "boolean",
+      "description": "Auto-merge PRs that pass all required status checks",
+      "example": false
+    },
+    "packageRules": {
+      "type": "array",
+      "description": "Array of match+action rules for specific packages",
+      "items": {
+        "properties": {
+          "matchPackageNames": { "type": "array", "description": "Exact package names" },
+          "matchPackagePatterns": { "type": "array", "description": "Regex patterns" },
+          "matchUpdateTypes": { "type": "array", "description": "major/minor/patch" },
+          "groupName": { "type": "string", "description": "Group packages into one PR" },
+          "automerge": { "type": "boolean" },
+          "enabled": { "type": "boolean" }
+        }
+      }
+    },
+    "ignoreDeps": {
+      "type": "array",
+      "description": "Dependencies to skip entirely",
+      "example": ["some-legacy-package"]
+    },
+    "dependencyDashboard": {
+      "type": "boolean",
+      "description": "Create a GitHub issue listing all pending updates",
+      "example": true
+    },
+    "lockFileMaintenance": {
+      "type": "object",
+      "description": "Schedule for periodic lock file refresh PRs",
+      "example": { "enabled": true, "schedule": ["before 5am on Monday"] }
+    },
+    "vulnerabilityAlerts": {
+      "type": "object",
+      "description": "Configuration for security vulnerability PRs",
+      "example": { "enabled": true, "labels": ["security"] }
+    }
+  }
+}
