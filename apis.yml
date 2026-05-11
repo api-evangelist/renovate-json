@@ -81,6 +81,109 @@ common:
     name: Renovate Vocabulary
     type: Vocabulary
     description: Dependency automation domain vocabulary
+  - type: Integrations
+    url: https://www.mend.io/integrations/
+integrations:
+  - name: Mend-io-logo-color
+  - name: Integrations - ai
+  - name: Integrations - sca
+  - name: Mend sast
+  - name: Integrations - renovate
+  - name: Integrations - dast icon 1
+  - name: Integrations - apis icon 1
+  - name: Integrations - eol
+  - name: Integrations - repoi
+  - name: Scalability-icon
+  - name: Integrations - reachability
+  - name: Ai models risk - nav bar
+  - name: Ai-red-teaming-icon-
+  - name: Integrations - ai based remediation
+  - name: Integrations -
+  - name: Sbom - nav bar
+  - name: Runtime-security-nav-bar-icon
+  - name: Code scanning - nav bar
+  - name: Open source license nav bar
+  - name: Open source license - nav bar
+  - name: Dependency updates - nav bar
+  - name: Software supply chain - nav bar
+  - name: Container security container security
+  - name: About us - nav bar
+  - name: Careers nav bar
+  - name: Partners - nav bar
+  - name: Events - nav bar
+  - name: Newsroom - nav bar
+  - name: Contact-us nav bar
+  - name: Resource center - nav bar
+  - name: Blog - nav bar
+  - name: Podcast-icon
+  - name: Customers - nav bar
+  - name: Integrations - nav bar
+  - name: Langugages nav bar
+  - name: Vulnerability database - nav bar
+  - name: Integrations - roi whitepaper featured image
+  - name: JIRA
+  - name: ServiceNow
+  - name: Azure DevOps
+  - name: Bitbucket Server
+  - name: Bitbucket Data Center
+  - name: Bitbucket Cloud
+  - name: GitLab
+  - name: GitHub
+  - name: GitHub Enterprise
+  - name: HeroDevs
+  - name: Bazel
+  - name: Ocaml
+  - name: Cabal
+  - name: Erlang
+  - name: Elixir
+  - name: Rust
+  - name: Cocoa Pods
+  - name: Ruby Bundler
+  - name: Composer
+  - name: Packrat
+  - name: Sbt
+  - name: Conda
+  - name: Poetry
+  - name: Pipenv
+  - name: Python PIP
+  - name: GoGradle
+  - name: Go VNDR
+  - name: Go Dep
+  - name: Go Modules
+  - name: nuget
+  - name: yarn
+  - name: npm
+  - name: Apache Ant
+  - name: Gradle
+  - name: Maven
+  - name: Docker Hardened Images
+  - name: Google Gemini Code Assist
+  - name: Google Gemini CLI
+  - name: Wiz
+  - name: Web Advisor Edge
+  - name: Chrome
+  - name: Code Claude
+  - name: Amazon Q Developer
+  - name: Copilot
+  - name: Cursor
+  - name: Windsurf
+  - name: Google Antigravity
+  - name: Visual Studio Code
+  - name: Visual Studio
+  - name: WebStorm
+  - name: PyCharm
+  - name: IntelliJ Idea
+  - name: Eclipse
+  - name: Microsoft Defender for Cloud
+  - name: Backstage
+  - name: Appsec Phoenix
+  - name: ThreadFix
+  - name: Fortify
+  - name: CodeFresh
+  - name: Bitbucket Pipelines
+  - name: Cloud Build
+  - name: Travis CI
+  - name: AWS CodeBuild
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
