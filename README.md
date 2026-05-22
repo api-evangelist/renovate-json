@@ -1,6 +1,6 @@
 # Renovate
 
-Renovate is an open-source, cross-platform dependency automation tool by Mend.io that automatically creates pull requests to keep software dependencies up to date. It supports over 90 package managers and language ecosystems including npm, PyPI, Maven, Docker, Helm, Go modules, Ruby Gems, NuGet, and more. Renovate runs as a CLI, Docker container, GitHub Action, or hosted cloud service (Mend Renovate App). Configuration is done via a `renovate.json` file in the repository root.
+Renovate is an Open Source, cross-platform dependency automation tool by Mend.io that automatically creates pull requests to keep software dependencies up to date. It supports over 90 package managers and language ecosystems including npm, PyPI, Maven, Docker, Helm, Go modules, Ruby Gems, NuGet, and more. Renovate runs as a CLI, Docker container, GitHub Action, or hosted cloud service (Mend Renovate App). Configuration is done via a `renovate.json` file in the repository root.
 
 **GitHub Repository:** [https://github.com/renovatebot/renovate](https://github.com/renovatebot/renovate)
 
@@ -10,7 +10,7 @@ Renovate is an open-source, cross-platform dependency automation tool by Mend.io
 
 ## Project Overview
 
-Renovate is a GitHub-first open-source tool with 21,000+ GitHub stars. No HTTP API is exposed; it operates as a bot that processes Git repositories directly. The project is primarily consumed via:
+Renovate is a GitHub-first Open Source tool with 21,000+ GitHub stars. No HTTP API is exposed; it operates as a bot that processes Git repositories directly. The project is primarily consumed via:
 
 - **npm package:** `npm install -g renovate`
 - **Docker image:** `docker pull renovate/renovate`
