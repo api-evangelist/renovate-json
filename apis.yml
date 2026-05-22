@@ -1,13 +1,14 @@
 aid: renovate-json
 name: Renovate
 description: >-
-  Renovate is an open-source, cross-platform dependency automation tool by Mend.io
+  Renovate is an Open Source, cross-platform dependency automation tool by Mend.io
   that automatically creates pull requests to keep software dependencies up to date.
   It supports over 90 package managers and language ecosystems including npm, PyPI,
   Maven, Docker, Helm, Go modules, Ruby Gems, NuGet, and more. Renovate runs as a
   CLI, Docker container, GitHub Action, or hosted cloud service (Mend Renovate App).
   It integrates with GitHub, GitLab, Bitbucket, Azure DevOps, Gitea, Forgejo, and
-  AWS CodeCommit. Configuration is done via a renovate.json file in the repository root.
+  AWS CodeCommit. Configuration is done via a number of different locations in
+  the repository: most commonly a `renovate.json` file in the repository root.
   The tool supports advanced scheduling, monorepo support, preset sharing, merge
   confidence scoring, and automatic replacement of deprecated packages.
 type: Index
@@ -50,7 +51,11 @@ common:
     type: SDK
     description: Renovate CLI distributed as an npm package for self-hosting
   - url: https://hub.docker.com/r/renovate/renovate
-    name: Renovate Docker Image
+    name: Renovate Docker Image (`docker.io`)
+    type: ContainerImage
+    description: Official Docker image for self-hosted Renovate deployments
+  - url: https://ghcr.io/renovatebot/renovate
+    name: Renovate Docker Image (`ghcr.io`)
     type: ContainerImage
     description: Official Docker image for self-hosted Renovate deployments
   - url: https://github.com/renovatebot/helm-charts
@@ -60,7 +65,7 @@ common:
   - url: https://github.com/orgs/renovatebot/repositories
     name: Renovate GitHub Organization
     type: GitHubOrganization
-    description: All Renovate open-source projects including SDKs and integrations
+    description: All Renovate Open Source projects including SDKs and integrations
   - url: https://github.com/renovatebot/tutorial
     name: Renovate Tutorial
     type: Tutorial

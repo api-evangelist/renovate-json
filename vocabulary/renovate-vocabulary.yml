@@ -1,7 +1,7 @@
 vocabulary:
   name: Renovate Vocabulary
   description: >-
-    Vocabulary and taxonomy for Renovate, the open-source cross-platform
+    Vocabulary and taxonomy for Renovate, the Open Source cross-platform
     dependency automation tool. Covers configuration concepts, update strategies,
     package manager support, platform integrations, and workflow patterns.
   version: "1.0"
