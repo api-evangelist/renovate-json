@@ -7,7 +7,8 @@ description: >-
   Maven, Docker, Helm, Go modules, Ruby Gems, NuGet, and more. Renovate runs as a
   CLI, Docker container, GitHub Action, or hosted cloud service (Mend Renovate App).
   It integrates with GitHub, GitLab, Bitbucket, Azure DevOps, Gitea, Forgejo, and
-  AWS CodeCommit. Configuration is done via a renovate.json file in the repository root.
+  AWS CodeCommit. Configuration is done via a number of different locations in
+  the repository: most commonly a `renovate.json` file in the repository root.
   The tool supports advanced scheduling, monorepo support, preset sharing, merge
   confidence scoring, and automatic replacement of deprecated packages.
 type: Index
