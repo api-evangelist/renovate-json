@@ -10,7 +10,7 @@ Renovate is an Open Source, cross-platform dependency automation tool by Mend.io
 
 ## Project Overview
 
-Renovate is a GitHub-first Open Source tool with 21,000+ GitHub stars. No HTTP API is exposed; it operates as a bot that processes Git repositories directly. The project is primarily consumed via:
+Renovate is a cross-Forge Open Source tool with 21,000+ GitHub stars. No HTTP API is exposed; it operates as a bot that processes Git repositories directly. The project is primarily consumed via:
 
 - **npm package:** `npm install -g renovate`
 - **Docker image:** `docker pull renovate/renovate`
