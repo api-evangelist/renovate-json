@@ -51,7 +51,11 @@ common:
     type: SDK
     description: Renovate CLI distributed as an npm package for self-hosting
   - url: https://hub.docker.com/r/renovate/renovate
-    name: Renovate Docker Image
+    name: Renovate Docker Image (`docker.io`)
+    type: ContainerImage
+    description: Official Docker image for self-hosted Renovate deployments
+  - url: https://ghcr.io/renovatebot/renovate
+    name: Renovate Docker Image (`ghcr.io`)
     type: ContainerImage
     description: Official Docker image for self-hosted Renovate deployments
   - url: https://github.com/renovatebot/helm-charts

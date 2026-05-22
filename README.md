@@ -13,7 +13,7 @@ Renovate is an Open Source, cross-platform dependency automation tool by Mend.io
 Renovate is a cross-Forge Open Source tool with 21,000+ GitHub stars. No HTTP API is exposed; it operates as a bot that processes Git repositories directly. The project is primarily consumed via:
 
 - **npm package:** `npm install -g renovate`
-- **Docker image:** `docker pull renovate/renovate`
+- **Docker image:** `docker pull renovate/renovate` / `docker pull ghcr.io/renovatebot/renovate`
 - **GitHub Action:** `renovatebot/github-action`
 - **Helm chart:** `renovatebot/helm-charts`
 - **Hosted app:** Mend Renovate GitHub App
@@ -58,7 +58,7 @@ Renovate is a cross-Forge Open Source tool with 21,000+ GitHub stars. No HTTP AP
 | GitHub App | [https://github.com/apps/renovate](https://github.com/apps/renovate) |
 | GitHub Action | [https://github.com/renovatebot/github-action](https://github.com/renovatebot/github-action) |
 | npm Package | [https://www.npmjs.com/package/renovate](https://www.npmjs.com/package/renovate) |
-| Docker Image | [https://hub.docker.com/r/renovate/renovate](https://hub.docker.com/r/renovate/renovate) |
+| Docker Image | [https://hub.docker.com/r/renovate/renovate](https://hub.docker.com/r/renovate/renovate) [ghcr.io/renovatebot/renovate](https://ghcr.io/renovatebot/renovate) |
 | Helm Charts | [https://github.com/renovatebot/helm-charts](https://github.com/renovatebot/helm-charts) |
 | Tutorial | [https://github.com/renovatebot/tutorial](https://github.com/renovatebot/tutorial) |
 
