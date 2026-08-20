@@ -18,6 +18,13 @@ tags:
   - CI/CD
   - Configuration
   - Dependency Management
+  - Open-Source
+  - DevOps
+tags_raw:
+  - Automation
+  - CI/CD
+  - Configuration
+  - Dependency Management
   - Open Source
   - DevOps
 url: https://raw.githubusercontent.com/api-evangelist/renovate-json/refs/heads/main/apis.yml
