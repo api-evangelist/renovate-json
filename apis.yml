@@ -12,6 +12,17 @@ description: >-
   The tool supports advanced scheduling, monorepo support, preset sharing, merge
   confidence scoring, and automatic replacement of deprecated packages.
 type: Index
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - Automation
