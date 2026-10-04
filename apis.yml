@@ -13,15 +13,20 @@ description: >-
   confidence scoring, and automatic replacement of deprecated packages.
 type: Index
 deliveryModel:
-  model: unknown
-  open_source: unknown
+  model: self-hosted
+  license: AGPL-3.0
+  license_evidence:
+    repo: renovatebot/renovate
+    spdx: AGPL-3.0
+    stars: 22588
+  open_source: true
   commercial: false
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
-  confidence: low
+  label: Self-hosted open source · you run it yourself
+  confidence: medium
   source:
-  - repository-unlicensed
-  generated: '2026-08-28'
+  - repository-license
+  generated: '2026-09-25'
   method: derived
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
@@ -29,7 +34,7 @@ tags:
   - CI/CD
   - Configuration
   - Dependency Management
-  - Open-Source
+  - Open Source
   - DevOps
 tags_raw:
   - Automation
@@ -38,6 +43,7 @@ tags_raw:
   - Dependency Management
   - Open Source
   - DevOps
+  - Open-Source
 url: https://raw.githubusercontent.com/api-evangelist/renovate-json/refs/heads/main/apis.yml
 created: '2025-01-01'
 modified: '2026-05-02'
