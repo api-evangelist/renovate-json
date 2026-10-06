@@ -46,10 +46,14 @@ tags_raw:
   - Open-Source
 url: https://raw.githubusercontent.com/api-evangelist/renovate-json/refs/heads/main/apis.yml
 created: '2025-01-01'
-modified: '2026-05-02'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis: []
 common:
+  - url: https://www.mend.io/newsroom/
+    type: Blog
+  - url: https://www.mend.io/feed/
+    type: BlogRSS
   - url: https://github.com/renovatebot/renovate
     name: Renovate GitHub Repository
     type: GitHubRepository
