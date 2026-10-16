@@ -1,0 +1,21 @@
+{
+  "repo": "renovate-json",
+  "feeds": [
+    {
+      "source": "https://www.mend.io/newsroom/",
+      "feed_url": "https://www.mend.io/newsroom/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://www.mend.io/feed/",
+      "feed_url": "https://www.mend.io/feed/",
+      "title": "",
+      "saved": 2,
+      "method": "feed"
+    }
+  ],
+  "post_count": 2,
+  "fetched": "2026-10-10T13:15:00Z"
+}
